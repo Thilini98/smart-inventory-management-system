@@ -16,6 +16,9 @@
                         <br>
                         <br>
                         <div>
+                           <a href="{{ route('frontend.user.orders') }}" class="btn btn-primary btn-block">Orders</a>     
+                        </div><br>
+                        <div>
                             <a href="{{ route('frontend.user.products') }}" class="btn btn-primary btn-block">Explore the Products</a>
                         </div>   
                     </x-slot>

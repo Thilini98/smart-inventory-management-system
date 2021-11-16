@@ -36,6 +36,7 @@ Route::group(['as' => 'user.', 'middleware' => ['auth', 'password.expires', conf
     Route::delete('remove-from-cart', [CartController::class, 'remove'])->name('remove.from.cart');  
     Route::patch('update-cart', [CartController::class, 'update'])->name('update.cart');
     Route::post('place-order', [CartController::class, 'placeOrder'])->name('place.order');
-             
+    
+    Route::get('orders', [DashboardController::class, 'showOrder'])->name('orders');
     
 });
